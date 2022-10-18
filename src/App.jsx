@@ -116,6 +116,7 @@ function App() {
 
   return (
     <div className='App'>
+      <StartScreen />
       {gameStage === "start" && <StartScreen startGame={startGame}/>}
       {gameStage === "game" && <Game verifyLetter={verifyLetter} palavraEscolhida={palavraEscolhida} categoriaEscolhida={categoriaEscolhida} letras={letras} letrasAdivinhadas={letrasAdivinhadas} letrasErradas={letrasErradas} tentativas={tentativas} pontos={pontos} />}
       {gameStage === "end" && <GameOver retry={retry} pontos={pontos}/>}
